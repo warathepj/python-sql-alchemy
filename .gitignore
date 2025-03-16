@@ -1,0 +1,4 @@
+__pycache__/
+sqlalchemy/
+txt/
+example.db

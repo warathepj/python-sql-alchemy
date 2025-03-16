@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addresses List</title>
+</head>
+<body>
+    <h1>Email Addresses</h1>
+    <a href="/">Back to Home</a>
+
+    <div class="addresses-list">
+        {% for address in addresses %}
+            <div class="address-card">
+                <p>Email: {{ address.email_address }}</p>
+                <p>User ID: {{ address.user_id }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
